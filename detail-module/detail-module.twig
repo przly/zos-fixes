@@ -1,0 +1,135 @@
+<section
+	data-component="mod-detail-module"
+	class="sc-general : sc-detail-module"
+	{{ detail_module.text__id ? 'id="' ~ detail_module.text__id ~ '"' }}
+>
+	{% include '@atoms/section-margin/section-margin.twig' with {
+		default_zero_spacing: true,
+		spacing_size: detail_module.select__top_spacing_size
+	} %}
+
+	<div class="detail-module {{ detail_module.link__registration_button ? 'detail-module--guest' }}">
+		<div class="container">
+			{% if detail_module.text__tag or detail_module.text__title or detail_module.date__date %}
+				<div class="detail-module__header">
+					<div class="row : center-sm">
+						<div class="col-md-8 : col-lg-6 : col-sm-10 : col-xs-12">
+							{% if detail_module.text__tag or detail_module.date__date or detail_module.text__time %}
+								<div class="detail-module__info">
+									{% if detail_module.date__date or detail_module.text__time %}
+										<div class="detail-module__date : text--12 : text--gray-500 : text--md">
+											{{ detail_module.date__date }} {% if
+												detail_module.date__date and detail_module.text__time %}
+												<span>|</span>
+											{% endif %}
+											{% if detail_module.text__time %}
+												{{ detail_module.text__time }}
+											{% endif %}
+										</div>
+									{% endif %}
+
+									{% if detail_module.text__tag %}
+										{% include '@atoms/tag/tag.twig' with {
+											tag: {
+												text__text: detail_module.text__tag,
+												select__color: 'gray'
+											}
+										} %}
+									{% endif %}
+								</div>
+							{% endif %}
+
+							{% if detail_module.text__title %}
+								<div class="detail-module__title">
+									{% include '@atoms/title/title.twig' with {
+										modifier: 'h1',
+										tag: 'h1',
+										title: detail_module.text__title
+									} %}
+								</div>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			{% endif %}
+
+			<div class="detail-module__body">
+				{% if detail_module.link__registration_button %}
+					<div class="detail-module__blur" aria-hidden="true">
+						{% for i in 1..6 %}
+							<span></span>
+						{% endfor %}
+					</div>
+				{% endif %}
+
+				{% if detail_module.image__featured_image %}
+					<div class="detail-module__main-img">
+						<div class="row : center-sm">
+							<div class="col-md-10 : col-lg-8 : col-xs-12">
+								<img
+									src="{{ detail_module.image__featured_image }}"
+									alt="{{ detail_module.featured_image_alt }}"
+									width="928"
+									height="520"
+								/>
+							</div>
+						</div>
+					</div>
+				{% endif %}
+
+				{% for item in detail_module.flexible_content__items %}
+					<div class="detail-module__item">
+						{% if item.wysiwyg__text %}
+							<div class="row : center-sm">
+								<div class="col-md-8 : col-lg-6 : col-sm-10 : col-xs-12">
+									{% include '@modules/editor-text/editor-text.twig' with {
+										text_modifier: 'text--gray-400',
+										editor_content: item.wysiwyg__text
+									} %}
+								</div>
+							</div>
+						{% elseif item.embed_video %}
+							<div class="row : center-sm">
+								<div class="col-md-10 : col-lg-8 : col-xs-12">
+									{% include '@modules/embed-video/embed-video.twig' with {
+										inner_section: true,
+										embed_video: item.embed_video
+									} %}
+								</div>
+							</div>
+						{% else %}
+							<div
+								class="detail-module__gallery : detail-module__gallery-{{ item.repeater__images|length }}"
+							>
+								{% for item in item.repeater__images %}
+									<img
+										src="{{ item.image__image }}"
+										alt="{{ item.image_alt }}"
+										height="342"
+										width="342"
+									/>
+								{% endfor %}
+							</div>
+						{% endif %}
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+
+		{% if detail_module.link__registration_button %}
+			<div class="detail-module__footer">
+				{% include '@atoms/button/button.twig' with {
+					href: detail_module.link__registration_button,
+					text: detail_module.registration_button_text,
+					target: detail_module.registration_button_target,
+					rel: detail_module.registration_button_rel
+				} %}
+			</div>
+		{% endif %}
+	</div>
+
+	{% include '@atoms/section-margin/section-margin.twig' with {
+		default_160_spacing: true,
+		spacing_size: detail_module.select__bottom_spacing_size
+	} %}
+</section>

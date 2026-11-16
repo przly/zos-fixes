@@ -1,0 +1,279 @@
+{
+	"title": "Detail module",
+	"notes": "detail module",
+	"status": "acceptance",
+	"acf_function": "getDetailModuleFields",
+	"default": "default",
+	"variants": [
+		{
+			"name": "default",
+			"context": {
+				"detail_module": {
+					"date__date": "11. August 2026",
+					"text__time": "17:00",
+					"text__tag": "Category name",
+					"text__title": "Ješetov dan 2026",
+					"image__featured_image": "../../images/news-detail.webp",
+					"featured_image_alt": "#",
+					"flexible_content__items": [
+						{
+							"wysiwyg__text": "<h2>Vloga bolnika in preventiva</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique. Morbi ultrices nibh nec sollicitudin accumsan. Phasellus placerat magna ut arcu suscipit hendrerit. Proin vel efficitur purus, in rutrum turpis. </p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique. Morbi ultrices nibh nec sollicitudin accumsan. Phasellus placerat magna ut arcu suscipit hendrerit. Proin vel efficitur purus, in rutrum turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique. Morbi ultrices nibh nec sollicitudin accumsan. Phasellus placerat magna ut arcu suscipit hendrerit. Proin vel efficitur purus, in rutrum turpis.</p>"
+						},
+						{
+							"wysiwyg__text": "<h2>Vloga bolnika in preventiva</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique. Morbi ultrices nibh nec sollicitudin accumsan. Phasellus placerat magna ut arcu suscipit hendrerit. Proin vel efficitur purus, in rutrum turpis. </p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique. Morbi ultrices nibh nec sollicitudin accumsan. Phasellus placerat magna ut arcu suscipit hendrerit. Proin vel efficitur purus, in rutrum turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique. Morbi ultrices nibh nec sollicitudin accumsan. Phasellus placerat magna ut arcu suscipit hendrerit. Proin vel efficitur purus, in rutrum turpis.</p>"
+						},
+						{
+							"repeater__images": [
+								{
+									"image__image": "../../images/image-gallery-1.webp",
+									"image_alt": "#"
+								},
+								{
+									"image__image": "../../images/image-gallery-2.webp",
+									"image_alt": "#"
+								},
+								{
+									"image__image": "../../images/image-gallery-3.webp",
+									"image_alt": "#"
+								}
+							]
+						},
+						{
+							"wysiwyg__text": "<h2>Vloga bolnika in preventiva</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique. Morbi ultrices nibh nec sollicitudin accumsan. Phasellus placerat magna ut arcu suscipit hendrerit. Proin vel efficitur purus, in rutrum turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique. Morbi ultrices nibh nec sollicitudin accumsan. Phasellus placerat magna ut arcu suscipit hendrerit. Proin vel efficitur purus, in rutrum turpis. </p>"
+						},
+						{
+							"embed_video": {
+								"text__video_id": "g0IjJLHw6bA",
+								"image__poster_image": "../../images/video-poster.webp",
+								"poster_image_alt": "Image"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"name": "guest-user",
+			"context": {
+				"detail_module": {
+					"date__date": "11. August 2026",
+					"text__tag": "Category name",
+					"text__title": "Ješetov dan 2026",
+					"image__featured_image": "../../images/news-detail.webp",
+					"featured_image_alt": "#",
+					"flexible_content__items": [
+						{
+							"wysiwyg__text": "<h2>Vloga bolnika in preventiva</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique. Morbi ultrices nibh nec sollicitudin accumsan. Phasellus placerat magna ut arcu suscipit hendrerit. Proin vel efficitur purus, in rutrum turpis. </p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique. Morbi ultrices nibh nec sollicitudin accumsan. Phasellus placerat magna ut arcu suscipit hendrerit. Proin vel efficitur purus, in rutrum turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique. Morbi ultrices nibh nec sollicitudin accumsan. Phasellus placerat magna ut arcu suscipit hendrerit. Proin vel efficitur purus, in rutrum turpis.</p>"
+						},
+						{
+							"wysiwyg__text": "<h2>Vloga bolnika in preventiva</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique. Morbi ultrices nibh nec sollicitudin accumsan. Phasellus placerat magna ut arcu suscipit hendrerit. Proin vel efficitur purus, in rutrum turpis. </p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique. Morbi ultrices nibh nec sollicitudin accumsan. Phasellus placerat magna ut arcu suscipit hendrerit. Proin vel efficitur purus, in rutrum turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique. Morbi ultrices nibh nec sollicitudin accumsan. Phasellus placerat magna ut arcu suscipit hendrerit. Proin vel efficitur purus, in rutrum turpis.</p>"
+						}
+					],
+					"link__registration_button": "#",
+					"registration_button_text": "Registriraj se za dostop"
+				}
+			}
+		},
+		{
+			"name": "guest-very-short",
+			"context": {
+				"detail_module": {
+					"date__date": "11. August 2026",
+					"text__tag": "Category name",
+					"text__title": "Ješetov dan 2026",
+					"image__featured_image": "../../images/news-detail.webp",
+					"featured_image_alt": "#",
+					"flexible_content__items": [
+						{
+							"wysiwyg__text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p>"
+						}
+					],
+					"link__registration_button": "#",
+					"registration_button_text": "Registriraj se za dostop"
+				}
+			}
+		},
+		{
+			"name": "guest-short",
+			"context": {
+				"detail_module": {
+					"date__date": "11. August 2026",
+					"text__tag": "Category name",
+					"text__title": "Ješetov dan 2026",
+					"image__featured_image": "../../images/news-detail.webp",
+					"featured_image_alt": "#",
+					"flexible_content__items": [
+						{
+							"wysiwyg__text": "<h2>Vloga bolnika in preventiva</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p>"
+						}
+					],
+					"link__registration_button": "#",
+					"registration_button_text": "Registriraj se za dostop"
+				}
+			}
+		},
+		{
+			"name": "guest-long",
+			"context": {
+				"detail_module": {
+					"date__date": "11. August 2026",
+					"text__tag": "Category name",
+					"text__title": "Ješetov dan 2026",
+					"image__featured_image": "../../images/news-detail.webp",
+					"featured_image_alt": "#",
+					"flexible_content__items": [
+						{
+							"wysiwyg__text": "<h2>Vloga bolnika in preventiva</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p>"
+						},
+						{
+							"wysiwyg__text": "<h2>Vloga bolnika in preventiva</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p>"
+						},
+						{
+							"repeater__images": [
+								{
+									"image__image": "../../images/image-gallery-1.webp",
+									"image_alt": "#"
+								},
+								{
+									"image__image": "../../images/image-gallery-2.webp",
+									"image_alt": "#"
+								},
+								{
+									"image__image": "../../images/image-gallery-3.webp",
+									"image_alt": "#"
+								}
+							]
+						},
+						{
+							"wysiwyg__text": "<h2>Vloga bolnika in preventiva</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p>"
+						},
+						{
+							"embed_video": {
+								"text__video_id": "g0IjJLHw6bA",
+								"image__poster_image": "../../images/video-poster.webp",
+								"poster_image_alt": "Image"
+							}
+						},
+						{
+							"wysiwyg__text": "<h2>Vloga bolnika in preventiva</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p>"
+						}
+					],
+					"link__registration_button": "#",
+					"registration_button_text": "Registriraj se za dostop"
+				}
+			}
+		},
+		{
+			"name": "guest-no-image",
+			"context": {
+				"detail_module": {
+					"date__date": "11. August 2026",
+					"text__tag": "Category name",
+					"text__title": "Ješetov dan 2026",
+					"flexible_content__items": [
+						{
+							"wysiwyg__text": "<h2>Vloga bolnika in preventiva</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p>"
+						},
+						{
+							"wysiwyg__text": "<h2>Vloga bolnika in preventiva</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p>"
+						},
+						{
+							"wysiwyg__text": "<h2>Vloga bolnika in preventiva</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p>"
+						}
+					],
+					"link__registration_button": "#",
+					"registration_button_text": "Registriraj se za dostop"
+				}
+			}
+		},
+		{
+			"name": "guest-gallery-first",
+			"context": {
+				"detail_module": {
+					"date__date": "11. August 2026",
+					"text__tag": "Category name",
+					"text__title": "Ješetov dan 2026",
+					"image__featured_image": "../../images/news-detail.webp",
+					"featured_image_alt": "#",
+					"flexible_content__items": [
+						{
+							"repeater__images": [
+								{
+									"image__image": "../../images/image-gallery-1.webp",
+									"image_alt": "#"
+								},
+								{
+									"image__image": "../../images/image-gallery-2.webp",
+									"image_alt": "#"
+								},
+								{
+									"image__image": "../../images/image-gallery-3.webp",
+									"image_alt": "#"
+								}
+							]
+						},
+						{
+							"wysiwyg__text": "<h2>Vloga bolnika in preventiva</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p>"
+						},
+						{
+							"wysiwyg__text": "<h2>Vloga bolnika in preventiva</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p>"
+						}
+					],
+					"link__registration_button": "#",
+					"registration_button_text": "Registriraj se za dostop"
+				}
+			}
+		},
+		{
+			"name": "guest-video-first",
+			"context": {
+				"detail_module": {
+					"date__date": "11. August 2026",
+					"text__tag": "Category name",
+					"text__title": "Ješetov dan 2026",
+					"image__featured_image": "../../images/news-detail.webp",
+					"featured_image_alt": "#",
+					"flexible_content__items": [
+						{
+							"embed_video": {
+								"text__video_id": "g0IjJLHw6bA",
+								"image__poster_image": "../../images/video-poster.webp",
+								"poster_image_alt": "Image"
+							}
+						},
+						{
+							"wysiwyg__text": "<h2>Vloga bolnika in preventiva</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p>"
+						},
+						{
+							"wysiwyg__text": "<h2>Vloga bolnika in preventiva</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p>"
+						}
+					],
+					"link__registration_button": "#",
+					"registration_button_text": "Registriraj se za dostop"
+				}
+			}
+		},
+		{
+			"name": "guest-long-title",
+			"context": {
+				"detail_module": {
+					"date__date": "11. August 2026",
+					"text__tag": "Category name",
+					"text__title": "Novosti s področja zdravljenja starostne degeneracije rumene pege in diabetičnega makularnega edema v letu 2026",
+					"image__featured_image": "../../images/news-detail.webp",
+					"featured_image_alt": "#",
+					"flexible_content__items": [
+						{
+							"wysiwyg__text": "<h2>Vloga bolnika in preventiva</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p>"
+						},
+						{
+							"wysiwyg__text": "<h2>Vloga bolnika in preventiva</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in nisi fringilla, tincidunt nisi id, sodales justo. Donec congue consequat iaculis. Vivamus quis varius massa. Suspendisse potenti. Donec gravida facilisis tristique.</p>"
+						}
+					],
+					"link__registration_button": "#",
+					"registration_button_text": "Registriraj se za dostop"
+				}
+			}
+		}
+	]
+}

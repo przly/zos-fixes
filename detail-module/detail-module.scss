@@ -1,0 +1,268 @@
+@import '../../../scss/import';
+
+.detail-module {
+	// ##################################################
+
+	&__header {
+		margin-bottom: 92px;
+
+		// Tablet P and down
+		@media #{$breakpoint-sm-down} {
+			margin-bottom: 40px;
+		}
+	}
+
+	// ##################################################
+
+	&__body {
+		display: grid;
+		grid-gap: 96px;
+		align-content: flex-start;
+
+		// Tablet P and down
+		@media #{$breakpoint-sm-down} {
+			grid-gap: 60px;
+		}
+
+		// Mobile
+		@media #{$breakpoint-xs-only} {
+			grid-gap: 40px;
+		}
+	}
+
+	// ##################################################
+
+	&__info {
+		margin-bottom: 50px;
+		display: flex;
+		align-items: center;
+		gap: 28px;
+
+		// Tablet P and down
+		@media #{$breakpoint-sm-down} {
+			margin-bottom: 20px;
+		}
+
+		// Mobile
+		@media #{$breakpoint-xs-only} {
+			margin-bottom: 16px;
+		}
+
+		.tag {
+			text-transform: uppercase;
+		}
+	}
+
+	// ##################################################
+
+	&__date {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+
+		// Dot
+		&::before {
+			content: '';
+			width: 6px;
+			height: 6px;
+			background-color: var(--color-dark-blue);
+			border-radius: 100%;
+		}
+	}
+
+	// ##################################################
+
+	&__main-img {
+		// Tablet L and up
+		@media #{$breakpoint-md-up} {
+			margin-bottom: 24px;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+			border-radius: 12px;
+		}
+	}
+
+	// ##################################################
+
+	&__items {
+		display: grid;
+		grid-gap: 56px;
+
+		// Mobile
+		@media #{$breakpoint-xs-only} {
+			grid-gap: 40px;
+		}
+	}
+
+	// ##################################################
+
+	.editor-text {
+		padding-top: 28px;
+		border-top: 1px solid var(--color-gray-200);
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-size: 24px;
+			letter-spacing: -0.02em;
+
+			// Tablet P and down
+			@media #{$breakpoint-sm-down} {
+				font-size: 20px;
+			}
+		}
+
+		// ##################################################
+
+		iframe {
+			margin: 56px 0;
+
+			// Mobile
+			@media #{$breakpoint-xs-only} {
+				margin: 40px 0;
+			}
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	// ##################################################
+
+	&__gallery {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		grid-gap: 20px;
+		max-width: 1096px;
+		margin: 0 auto 14px;
+
+		// Mobile
+		@media #{$breakpoint-xs-only} {
+			grid-template-columns: 1fr;
+			margin: 0;
+		}
+
+		// ##################################################
+
+		&-1 {
+			grid-template-columns: 1fr;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		// ##################################################
+
+		&-2 {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+
+			// Mobile
+			@media #{$breakpoint-xs-only} {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		// ##################################################
+
+		img {
+			width: 100%;
+			aspect-ratio: 350 / 270;
+			border-radius: 4px;
+		}
+	}
+
+	// ##################################################
+
+	.breadcrumbs {
+		margin-bottom: 64px;
+
+		@media #{$breakpoint-sm-down} {
+			margin-bottom: 40px;
+		}
+	}
+
+	// ##################################################
+
+	.product-card {
+		max-width: 100%;
+	}
+
+	// ##################################################
+
+	// Sits directly below the cut-off edge, where the blur and fade end.
+	&__footer {
+		display: flex;
+		justify-content: center;
+		padding-bottom: 65px;
+	}
+
+	// ##################################################
+
+	// Progressive blur over the lower half of the visible text:
+	// 16px at the cut-off edge, easing to 0 at the top.
+	// Stacked layers, each blur doubling, each masked to its own band.
+	&__blur {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		z-index: 2;
+		width: 100%;
+		height: var(--blur-height, 25%); // Set in JS: half of the visible text
+		pointer-events: none;
+		$blur-steps: 0.5px, 1px, 2px, 4px, 8px, 16px;
+		$blur-band: 14.2857%; // 100% / (number of steps + 1)
+
+		// Colour fade beneath the blur layers: page background at the
+		// cut-off edge, fully transparent at the top.
+		&::before {
+			@extend %content;
+			background: linear-gradient(to top, $cgp_gray_50, rgba($cgp_gray_50, 0));
+		}
+
+		span {
+			position: absolute;
+			inset: 0;
+		}
+
+		@for $i from 1 through length($blur-steps) {
+			$blur: nth($blur-steps, $i);
+			$mask: linear-gradient(
+				to bottom,
+				transparent ($i - 1) * $blur-band,
+				black $i * $blur-band,
+				black ($i + 1) * $blur-band,
+				transparent ($i + 2) * $blur-band
+			);
+
+			span:nth-child(#{$i}) {
+				backdrop-filter: blur($blur);
+				-webkit-backdrop-filter: blur($blur);
+				-webkit-mask-image: $mask;
+				mask-image: $mask;
+			}
+		}
+	}
+
+	// ##################################################
+
+	&--guest {
+		.detail-module__body {
+			position: relative;
+			overflow: hidden;
+			max-height: 100vh;
+		}
+	}
+}
